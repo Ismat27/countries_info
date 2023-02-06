@@ -32,7 +32,7 @@ export async function getStaticProps({params}) {
     return {
         props: {
             data,
-            country,
+            country: {...country, currencies: country.currencies || ['not available']}
         }
     }
 }
