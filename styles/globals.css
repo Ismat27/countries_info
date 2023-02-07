@@ -18,6 +18,9 @@ html {
   max-width: 1200px;
   margin: auto;
 }
+main {
+  padding-bottom: 2.5rem;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -68,6 +71,9 @@ header {
 img {
   max-width: 100%;
 }
+.continent_block {
+  margin-bottom: 2rem;
+}
 .continent_block_header {
   display: flex;
   gap: .5rem;
@@ -83,7 +89,7 @@ img {
 .country {
   display: flex;
   flex-direction: column;
-  /* min-width: 100%; */
+  min-width: 100%;
   gap: 0;
   max-width: 320px;
   border-radius: 10px;
@@ -189,6 +195,9 @@ input:focus {
   .countries {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+  .countries > a {
+    max-width: 290px;
   }
 }
 @media (min-width: 768px) {
