@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   /* margin: 0; */
@@ -9,6 +12,11 @@
 }
 .body {
   min-height: 100vh;
+}
+.page-center {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 ul {
   list-style: none;
@@ -60,18 +68,22 @@ header {
 img {
   max-width: 100%;
 }
+.continent_block_header {
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+}
 .countries {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* justify-content: center; */
-  width: 90%;
   margin: 0 auto;
 }
 .country {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  /* min-width: 100%; */
   gap: 0;
   max-width: 320px;
   border-radius: 10px;
