@@ -22,6 +22,11 @@ export async function getStaticProps({params}) {
     const { slug } = params
     const response = await fetch(`https://restcountries.com/v2/name/${slug}`)
     const data = await response.json()
+    if (!data) {
+        return {
+          notFound: true,
+        }
+    }
     let country = data[0]
     if (!country.borders) {
         country = {
