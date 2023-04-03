@@ -41,26 +41,31 @@ const SearchFilter = () => {
                 <ul className={`continents bg-white ${darkMode? 'bg-dark': ''} ${showContinent? 'show-continent': ''} `}>
                     <li
                      className="continent btn"
+                     onClick={setShowContinent}
                     >
                         <Link href={'/continents/africa'}>Africa</Link>
                     </li>
                     <li
                      className="continent btn"
+                     onClick={setShowContinent}
                     >
                         <Link href={'/continents/americas'}>Americas</Link>
                     </li>
                     <li
                      className="continent btn"
+                     onClick={setShowContinent}
                     >
                         <Link href={'/continents/asia'}>Asia</Link>
                     </li>
                     <li
                      className="continent btn"
+                     onClick={setShowContinent}
                     >
                         <Link href={'/continents/europe'}>Europe</Link>
                     </li>
                     <li
                      className="continent btn"
+                     onClick={setShowContinent}
                     >
                         <Link href={'/continents/oceania'}>Oceania</Link>
                     </li>
